@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --bg-color: rgb(235, 239, 246);
+      --text-color: rgb(16, 111, 220);
+    }
+    .dark {
+      --bg-color: black;
+      --text-color: white;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body class="dark">
+  <button onclick="document.body.classList.toggle('dark')">Toggle Theme</button>
+  <p>Toggle theme by clicking the button</p>
+</body>
+</html>
